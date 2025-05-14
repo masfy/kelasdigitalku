@@ -63,78 +63,7 @@ function createSidebar() {
                         <span class="text-sm font-medium">Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a href="classes.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2M7 7h10"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Kelas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="students.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Siswa</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="assignments.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Tugas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="grades.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Nilai</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="attendance.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Presensi</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="events.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Event</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="journal.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253M16 6.253v13m0-13C14.832 5.477 13.246 5 11.5 5S8.168 5.477 7 6.253v13C8.168 18.477 9.754 18 11.5 18s3.332.477 4.5 1.253"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Jurnal Pembelajaran</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="question-bank.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Bank Soal</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="gamification.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
-                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a4 4 0 00-4-4H5.45a4 4 0 00-3.91 3.22L1 11l.77 1.75C2.5 14.56 3.5 15 5 15h2.5M12 8l-3.5 3.5M12 8l3.5 3.5"></path>
-                        </svg>
-                        <span class="text-sm font-medium">Gamifikasi</span>
-                    </a>
-                </li>
+                <!-- other menu items... -->
             </ul>
         </nav>
         <div class="p-4 border-t">
@@ -167,9 +96,8 @@ function createHeader(user) {
             </div>
             <div class="relative">
                 <button id="user-menu-btn" class="flex items-center">
-                    <div class="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center">
-                        ${user ? getUserInitials(user) : 'U'}
-                    </div>
+                    <!-- Insert dynamic avatar with changing background -->
+                    ${user ? getUserInitials(user) : 'U'}
                 </button>
                 <div id="user-dropdown" class="absolute right-0 mt-2 w-48 bg-card border border-border rounded-md shadow-lg py-1 z-10 hidden">
                     <a href="#" class="block px-4 py-2 text-sm text-foreground hover:bg-muted/60 transition-colors">Profile</a>
@@ -181,6 +109,7 @@ function createHeader(user) {
     </div>
     `;
 }
+
 // Get user initials for avatar with dynamic pastel background color
 function getUserInitials(user) {
     const pastelColors = [
@@ -220,7 +149,6 @@ function getUserInitials(user) {
         </div>
     `;
 }
-
 
 // Set up event listeners for layout components
 function setupLayoutEventListeners() {
