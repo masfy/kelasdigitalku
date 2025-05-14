@@ -163,7 +163,7 @@ function createHeader(user) {
         </div>
         <div class="flex items-center">
             <div class="mr-4 text-sm text-muted-foreground hidden sm:block">
-                Welcome, ${user ? (user.name || user.username || 'User') : 'User'}
+                Selamat Datang, ${user ? (user.name || user.username || 'User') : 'User'}
             </div>
             <div class="relative">
                 <button id="user-menu-btn" class="flex items-center">
