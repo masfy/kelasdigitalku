@@ -181,7 +181,45 @@ function createHeader(user) {
     </div>
     `;
 }
+// Get user initials for avatar with dynamic pastel background color
+function getUserInitials(user) {
+    const pastelColors = [
+        '#FAD02E', // pastel yellow
+        '#F28D35', // pastel orange
+        '#D83367', // pastel pink
+        '#3A2A45', // pastel purple
+        '#4F9D98', // pastel teal
+        '#A4B8A4', // pastel green
+        '#D8A7B1', // pastel rose
+        '#6B4226', // pastel brown
+        '#B5C9E2', // pastel blue
+        '#F9D6A5'  // pastel peach
+    ];
 
+    // Randomly select a color from the pastel color array
+    const randomColor = pastelColors[Math.floor(Math.random() * pastelColors.length)];
+
+    if (user.name) {
+        const nameParts = user.name.split(' ');
+        if (nameParts.length > 1) {
+            return `
+                <div style="background-color: ${randomColor};" class="rounded-full w-8 h-8 flex items-center justify-center text-white">
+                    ${nameParts[0][0]}${nameParts[1][0]}
+                </div>
+            `;
+        }
+        return `
+            <div style="background-color: ${randomColor};" class="rounded-full w-8 h-8 flex items-center justify-center text-white">
+                ${user.name[0]}
+            </div>
+        `;
+    }
+    return `
+        <div style="background-color: ${randomColor};" class="rounded-full w-8 h-8 flex items-center justify-center text-white">
+            ${user.username[0]}
+        </div>
+    `;
+}
 // Get user initials for avatar
 function getUserInitials(user) {
     if (user.name) {
