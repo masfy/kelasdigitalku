@@ -220,17 +220,7 @@ function getUserInitials(user) {
         </div>
     `;
 }
-// Get user initials for avatar
-function getUserInitials(user) {
-    if (user.name) {
-        const nameParts = user.name.split(' ');
-        if (nameParts.length > 1) {
-            return `${nameParts[0][0]}${nameParts[1][0]}`.toUpperCase();
-        }
-        return user.name[0].toUpperCase();
-    }
-    return user.username[0].toUpperCase();
-}
+
 
 // Set up event listeners for layout components
 function setupLayoutEventListeners() {
