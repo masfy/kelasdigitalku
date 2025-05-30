@@ -1,496 +1,337 @@
 <!DOCTYPE html>
+
 <html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Edufysa GO - Login Area</title>
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy0xNiBoLTE2IHRleHQtcHJpbWFyeSIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiNhMmQyZmYiIGQ9Ik0xMiAxNC4yN0wxMC42NCAxM0M5LjA5IDExLjU3IDcuMTYgMTAuNTcgNSAxMC4xOFYxNy4xM0M3LjYxIDE3LjQ3IDEwIDE4LjQ3IDEyIDE5Ljk1QzE0IDE4LjQ3IDE2LjM5IDE3LjQ3IDE5IDE3LjEzVjEwLjE4QzE2Ljg0IDEwLjU3IDE0LjkxIDExLjU3IDEzLjM2IDEzTTE5IDguMTV toleranciaMTkuNjUgOC4wNSAyMC4zMiA4IDIxIDhWMTlDMTcuNSAxOSAxNC4zNiAyMC4zNSAxMiAyMi41NEM5LjY0IDIwLjM1IDYuNSAxOSAzIDE5VjhDMy42OCA4IDQuMzUgOC4wNSA1IDguMTVDNy42ksenIDguNTYgMTAuMSA5Ljc4IDEyIDExLjU0QzEzLjkgOS43OCAxNi4zMSA4LjU2IDE5IDguMTVNMTIgNkMxMi4yNyA2IDEyLjUgNS45IDEyLjcxIDUuNzFDMTIuOSA1LjUgMTMgNS4yNyAxMyA1UzEyLjkgNC41IDEyLjcxIDQuMjlDMTIuNSA0LjExIDEyLjI3IDQgMTIgNFMxMS41IDQuMTEgMTEuMjkgNC4yOUMxMS4xMSA0LjUgMTEgNC43NCAxMSA1UzExLjExIDUuNSAxMS4yOSA1LjcxQzExLjUgNS45IDExLjc0IDYgMTIgNk0xNC4xMiA3LjEyQzEzLjU2IDcuNjggMTIuOCA4IDEyIDhTMTAuNDQgNy42OCA5Ljg4IDcuMTJDOS4zMiA2LjU2IDkgNS44IDkgNVM5LjMyIDMuNDQgOS44OCAyLjg4QzEwLjQ0IDIuMzIgMTEuMiAyIDEyIDJTMTMuNTYgMi4zMiAxNC4xMiAyLjg4IDE1IDQuMiAxNSA1IDE0LjY4IDYuNTYgMTQuMTIgNy4xMloiLz48L3N2Zz4=" type="image/svg+xml">
+
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy0xNiBoLTE2IHRleHQtcHJpbWFyeSIgdmlld0JveD0iMCAwIDI4IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyIDE0LjI3TDEwLjY0IDEzQzkuMDkgMTEuNTcgNy4xNiAxMC41NyA1IDEwLjE4VjE3LjEzQzcuNjEgMTcuNDcgMTAgMTguNDcgMTIgMTkuOTVDMTQgMTguNDcgMTYuMzkgMTcuNDcgMTkgMTcuMTNWMTAuMThDMTYuODQgMTAuNTcgMTQuOTEgMTEuNTcgMTMuMzYgMTNNMTkgOC4xNUMxOS42NSA4LjA1IDIwLjMyIDggMjEgOFYxOUMxNy41IDE5IDE0LjM2IDIwLjM1IDEyIDIyLjU0QzkuNjQgMjAuMzUgNi41IDE5IDMgMTlWOEMzLjY4IDggNC4zNSA4LjA1IDUgOC4xNUM3LjY5IDguNTYgMTAuMSA5Ljc4IDEyIDExLjU0QzEzLjkgOS43OCAxNi4zMSA4LjU2IDE5IDguMTVNMTIgNkMxMi4yNyA2IDEyLjUgNS45IDEyLjcxIDUuNzFDMTIuOSA1LjUgMTMgNS4yNyAxMyA1UzEyLjkgNC41IDEyLjcxIDQuMjlDMTIuNSA0LjExIDEyLjI3IDQgMTIgNFMxMS41IDQuMDEgMTEuMjkgNC4yOUMxMS4xMSA0LjUgMTEgNC43NCAxMSA1UzExLjExIDUuNSAxMS4yOSA1LjcxQzExLjUgNS45IDExLjc0IDYgMTIgNk0xNC4xMiA3LjEyQzEzLjU2IDcuNjggMTIuOCA4IDEyIDhTMTAuNDQgNy42OCA5Ljg4IDcuMTJDOS4zMiA2LjU2IDkgNS44IDkgNVM5LjMyIDMuNDQgOS88QzEwLjQ0IDIuMzIgMTEuMiAyIDEyIDJTMTMuNTYgMi4zMiAxNC4xMiAyLjg4IDE1IDQuMiAxNSA1IDE0LjY4IDYuNTYgMTQuMTIgNy4xMloiLz48L3N2Zz4=" type="image/svg+xml">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <style>
+
         :root {
-            --pastel-bg: #f0e6ff; /* Light lavender */
-            --pastel-primary: #a2d2ff; /* Soft blue */
-            --pastel-secondary: #ffafcc; /* Soft pink */
-            --pastel-accent: #b0f2c2; /* Soft minty green */
-            --pastel-gold: #f7d794; /* Soft gold for specific highlights */
-            
-            --pastel-text-dark: #4a4a68; /* Darker muted purple/blue */
-            --pastel-text-light: #f8f9fa; /* Very light, almost white */
-
-            /* Enhanced Glassmorphism for form clarity */
-            --glass-bg: rgba(255, 255, 255, 0.55); /* Increased opacity */
-            --glass-border: rgba(240, 220, 255, 0.75); /* More visible, slightly lavender border */
-
-
-            --font-primary: 'Poppins', sans-serif;
-            --font-display: 'Russo One', sans-serif;
-
-            --shadow-color: rgba(120, 100, 150, 0.2); /* Slightly darker shadow for more pop */
-        }
-        
-        html {
-            height: 100%; /* Ensure html takes full height for body's min-height to work well */
+            --primary-color: #6366F1; /* Indigo */
+            --secondary-color: #34D399; /* Emerald */
+            --accent-color: #8B5CF6; /* Violet */
+            --background-start: #EDE9FE; /* Violet 50 */
+            --background-mid: #D5FAFC; /* Cyan 100 */
+            --background-end: #DBEAFE; /* Blue 100 */
+            --text-primary: #1E293B; /* Slate 800 */
+            --text-secondary: #475569; /* Slate 600 */
+            --card-background: #FFFFFF;
+            --card-shadow: rgba(0, 0, 0, 0.08);
+            --card-hover-shadow: rgba(0, 0, 0, 0.15);
+            --footer-bg: white;
+            --primary-color-rgb: 99, 102, 241; /* For shadow transparency */
         }
 
         body {
-            font-family: var(--font-primary);
-            margin: 0;
-            min-height: 100%; /* Changed to 100% to work with html height */
-            background: linear-gradient(135deg, var(--pastel-bg) 0%, var(--pastel-primary) 50%, var(--pastel-secondary) 100%);
-            background-size: 400% 400%;
-            animation: pastelBackgroundFlow 25s ease infinite alternate;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
             display: flex;
-            flex-direction: column; 
-            align-items: center;
-            justify-content: center; 
-            color: var(--pastel-text-dark);
-            padding: 20px; /* Padding on body for spacing from viewport edges */
-            box-sizing: border-box; /* Include padding in height/width calculations */
+            flex-direction: column;
             overflow-x: hidden;
+            background: linear-gradient(135deg, var(--background-start) 0%, var(--background-mid) 50%, var(--background-end) 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 25s ease-in-out infinite;
+            color: var(--text-secondary);
+            padding: 1rem; /* Reduced padding for mobile */
         }
 
-        @keyframes pastelBackgroundFlow {
+        @keyframes gradientShift {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-        
-        .login-wrapper { 
-            width: 100%; /* Take full width of padded body area */
-            max-width: 480px; 
+
+        .login-wrapper {
+            width: 100%;
+            max-width: 480px;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center children like branding, form, footer */
-            margin-top: auto; /* Push wrapper to vertical center if content is short */
-            margin-bottom: auto; /* Push wrapper to vertical center if content is short */
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            margin: 0 auto;
+            padding: 1rem 0;
         }
 
         .app-branding {
             text-align: center;
-            margin-bottom: 2rem; /* Space below branding */
+            margin-bottom: 1.5rem;
             animation: fadeInDown 1s ease-out;
         }
 
         .app-logo {
-            width: 100px; /* Slightly smaller */
-            height: 100px;
-            margin: 0 auto 1.2rem; /* Adjusted margin */
-            background: linear-gradient(145deg, var(--pastel-accent), var(--pastel-secondary));
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             border-radius: 50%;
-            padding: 10px; /* Adjusted padding */
+            padding: 0.75rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 20px color-mix(in srgb, var(--pastel-accent) 60%, transparent), 
-                        0 0 12px color-mix(in srgb, var(--pastel-secondary) 50%, transparent), 
-                        inset 0 0 8px rgba(0,0,0,0.1);
-            transition: transform 0.5s ease, box-shadow 0.5s ease;
-            animation: pulse 2.5s infinite ease-in-out; /* Slightly slower pulse */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.03); } /* Smaller pulse scale */
-            100% { transform: scale(1); }
-        }
+
         .app-logo:hover {
-            transform: scale(1.08) rotateY(10deg) rotateX(5deg); /* Adjusted hover scale */
-            box-shadow: 0 0 30px color-mix(in srgb, var(--pastel-accent) 70%, transparent), 
-                        0 0 20px color-mix(in srgb, var(--pastel-secondary) 60%, transparent), 
-                        inset 0 0 10px rgba(0,0,0,0.15);
-            animation-play-state: paused; 
+            transform: scale(1.1) rotate(5deg);
         }
+
         .app-logo svg {
-            width: 60%; height: 60%; fill: var(--pastel-text-light); 
+            width: 60%;
+            height: 60%;
+            fill: white;
         }
 
         .app-name {
-            font-family: var(--font-display);
-            font-size: 2.5rem; /* Adjusted size */
-            letter-spacing: 1px;
-            color: var(--pastel-secondary); /* Using a prominent pastel color */
-            text-shadow: 0 0 6px rgba(255,255,255,0.7), 0 0 10px color-mix(in srgb, var(--pastel-secondary) 40%, transparent); /* Softer glow */
-            margin-bottom: 0.5rem; /* Reduced margin */
+            font-weight: 800;
+            font-size: 2.25rem;
+            color: var(--text-primary);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 0.5rem;
         }
 
         .app-tagline {
-            font-size: 1rem; /* Adjusted size */
-            color: var(--pastel-text-dark);
-            opacity: 0.75; /* Slightly less opacity */
-            font-style: italic;
-            max-width: 300px; /* Adjusted width */
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            max-width: 300px;
             margin: 0 auto;
+            line-height: 1.5;
         }
-        
-        .login-portal { /* This is the form container */
-            width: 100%; /* Full width of its parent (.login-wrapper's max-width) */
-            background-color: var(--glass-bg);
-            backdrop-filter: blur(10px) saturate(150%); /* Slightly less blur, more saturation */
-            border-radius: 18px; /* Slightly adjusted radius */
-            border: 1px solid var(--glass-border);
-            padding: 2.2rem 1.8rem; /* Adjusted padding */
-            box-shadow: 0 12px 35px var(--shadow-color), /* Enhanced shadow for clarity */
-                        inset 0 1px 1px rgba(255,255,255,0.45);
+
+        .login-portal {
+            width: 100%;
+            max-width: 90%;
+            background: var(--card-background);
+            border-radius: 1.25rem;
+            padding: 1.75rem;
             position: relative;
-            animation: fadeInUp 1s ease-out 0.3s backwards;
+            box-shadow: 0 6px 12px var(--card-shadow);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
+            animation: gradientAround 10s ease-in-out infinite;
         }
-        .login-portal::before, .login-portal::after {
-            content: '';
-            position: absolute;
-            width: 25px; 
-            height: 25px;
-            border-color: var(--pastel-accent); 
-            border-style: solid;
-            opacity: 0.85; /* More visible corners */
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+
+        @keyframes gradientAround {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-        .login-portal::before { top: -8px; left: -8px; border-width: 3px 0 0 3px; border-top-left-radius: 10px;}
-        .login-portal::after { bottom: -8px; right: -8px; border-width: 0 3px 3px 0; border-bottom-right-radius: 10px;}
-        .login-portal:hover::before { transform: translate(4px, 4px) rotate(10deg); opacity: 1;}
-        .login-portal:hover::after { transform: translate(-4px, -4px) rotate(-10deg); opacity: 1;}
 
         .form-title {
-            font-family: var(--font-display);
-            font-size: 1.5rem; /* Adjusted */
+            font-weight: 700;
+            font-size: 1.5rem;
             text-align: center;
-            margin-bottom: 2rem; /* Adjusted */
-            color: var(--pastel-text-dark);
-            text-transform: uppercase;
-            letter-spacing: 1.2px; /* Adjusted */
+            margin-bottom: 0.3rem;
+            color: var(--text-primary);
+            text-transform: title case;
+            letter-spacing: 0.5px;
         }
-        .form-title .icon { 
-            margin-right: 0.5rem;
-            color: var(--pastel-secondary); 
-            font-size: 1.2em; /* Adjusted */
-            vertical-align: -0.1em;
-        }
-        
+
         .input-field-group {
-            margin-bottom: 1.5rem; /* Adjusted */
-            position: relative;
+        position: relative;
+            margin-bottom: 1.75rem; /* Increased margin */
+            animation: floatIn 0.8s ease-out 0.6s backwards;
         }
-        
+
         .input-field-group label {
             display: block;
-            margin-bottom: 0.6rem; /* Adjusted */
+            margin-bottom: 0.5rem;
             font-weight: 600;
-            font-size: 0.9rem; /* Adjusted */
-            color: color-mix(in srgb, var(--pastel-primary) 85%, var(--pastel-text-dark)); /* Richer blue label */
+            font-size: 0.9rem;
+            color: var(--text-primary);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        
-        .game-input { 
+
+        .game-input {
             width: 100%;
-            padding: 0.9rem 1.2rem; /* Adjusted */
-            background-color: rgba(255, 255, 255, 0.5); /* Lighter input bg for more contrast on form */
-            border: 1px solid var(--glass-border);
-            border-radius: 8px; /* Adjusted */
-            color: var(--pastel-text-dark);
-            font-size: 0.95rem; /* Adjusted */
+            padding: 0.75rem 5rem;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            color: var(--text-primary);
+            font-size: 0.95rem;
             transition: all 0.3s ease;
-            box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
-            letter-spacing: 0.5px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.1);
         }
+
         .game-input::placeholder {
-            color: var(--pastel-text-dark);
-            opacity: 0.55; /* Slightly less opaque placeholder */
+            color: var(--text-secondary);
+            opacity: 0.6;
         }
+
         .game-input:focus {
             outline: none;
-            border-color: var(--pastel-accent);
-            background-color: rgba(255, 255, 255, 0.65); /* Slightly more opaque on focus */
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.08), 0 0 10px var(--pastel-accent);
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 8px rgba(var(--secondary-color-rgb, 52, 211, 153), 0.3);
         }
-        
+
         .action-button {
-            font-family: var(--font-display);
+            font-weight: 700;
             width: 100%;
-            padding: 0.9rem 1.4rem; /* Adjusted */
-            background: linear-gradient(60deg, var(--pastel-secondary), var(--pastel-primary));
-            color: var(--pastel-text-light);
-            font-size: 1.1rem; /* Adjusted */
-            text-transform: uppercase;
-            letter-spacing: 1.1px; /* Adjusted */
-            border: none;
-            border-radius: 8px; /* Adjusted */
-            box-shadow: 0 3px 0 color-mix(in srgb, var(--pastel-primary) 65%, black), 0 5px 10px var(--shadow-color); /* Adjusted shadow */
-            transition: all 0.15s ease-out;
+            padding: 0.75rem 3rem;
+            background: linear-gradient(95deg, var(--primary-color), var(--accent-color));
+            color: white;
+            font-size: 1rem;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+            border: 5px;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background-size 0.3s ease;
             cursor: pointer;
-            margin-top: 0.5rem; 
+            margin-top: 0.5rem;
+            background-size: 100% 100%;
         }
+
         .action-button:hover {
-            background: linear-gradient(60deg, color-mix(in srgb, var(--pastel-secondary) 90%, white), color-mix(in srgb, var(--pastel-primary) 90%, white));
-            transform: translateY(-2px) scale(1.01); /* Adjusted hover effect */
-            box-shadow: 0 5px 0 color-mix(in srgb, var(--pastel-primary) 60%, black), 0 8px 15px color-mix(in srgb, var(--shadow-color) 100%, var(--pastel-primary) 20%);
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 6px 15px rgba(var(--primary-color-rgb), 0.4);
+            background-size: 150% 150%;
         }
+
         .action-button:active {
-            transform: translateY(1px) scale(0.99); /* Adjusted active effect */
-            box-shadow: 0 2px 0 color-mix(in srgb, var(--pastel-primary) 65%, black), 0 3px 6px var(--shadow-color);
+            transform: translateY(1px);
+            box-shadow: 0 2px 6px rgba(var(--primary-color-rgb), 0.3);
         }
-        .action-button.loading span:last-child{
-            margin-left: 0.5rem; 
-        }
-        .action-button.loading::after { 
-            content: ''; display: inline-block; width: 1em; height: 1em;
-            margin-left: 0.75em; vertical-align: middle;
-            border: 2.5px solid currentColor; border-right-color: transparent; /* Adjusted spinner thickness */
-            border-radius: 50%; animation: spin 0.6s linear infinite;
-        }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        
-        .links-section {
-            margin-top: 2rem; /* Adjusted */
-            text-align: center;
-        }
-        
+
         .subtle-link {
-            font-size: 0.9rem; /* Adjusted */
-            color: var(--pastel-text-dark); 
-            opacity: 0.85; /* Adjusted */
+            display: inline-block;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
             text-decoration: none;
-            transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
-            display: inline-block; 
-            margin: 0.4rem 0; /* Adjusted */
+            border: 2px solid var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
         }
+
         .subtle-link:hover {
-            color: var(--pastel-primary); /* Blue hover for links, pink is for app name */
-            text-shadow: 0 0 6px var(--pastel-primary);
-            transform: translateY(-1px); /* Subtle lift */
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
         }
+
         .subtle-link .icon {
-            margin-right: 0.3rem; /* Adjusted */
+            margin-right: 0.3rem;
             vertical-align: -0.1em;
         }
-        
-        .error-banner {
-            background-color: hsla(0, 80%, 85%, 0.6); /* Softer red, more transparent */
-            border: 1px solid hsla(0, 70%, 75%, 0.8);
-            border-radius: 8px; /* Adjusted */
-            padding: 0.75rem 1.1rem; /* Adjusted */
-            margin-bottom: 1.2rem; /* Adjusted */
-            color: var(--pastel-text-dark); 
-            display: none; 
-            text-align: center;
-            font-size: 0.85rem; /* Adjusted */
-            animation: fadeIn 0.3s ease-out;
-            font-weight: 500;
-        }
-        .error-banner.show { display: block; }
 
         .site-footer {
-            width: 100%; /* Will be max 480px due to parent */
+            width: 100%;
             text-align: center;
-            padding: 1.5rem 1rem 1rem; /* Footer padding */
-            margin-top: auto; /* Pushes footer to bottom OF THE WRAPPER */
-            font-size: 0.8rem; /* Adjusted */
-            color: var(--pastel-text-dark);
-            opacity: 0.7; 
+            padding: 1.25rem 1rem;
+            margin-top:auto;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+
+            border-top: 0px s;
         }
-        .site-footer p { margin: 0.25rem 0; } /* Adjusted */
-        .site-footer span#currentYear, .site-footer a { 
-            color: var(--pastel-secondary); 
+
+        .site-footer p {
+            margin: 0.25rem 0;
+        }
+
+        .site-footer span, .site-footer a {
+            color: var(--secondary-color);
             font-weight: 500;
         }
 
-
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px) scale(0.98); } /* Adjusted */
-            to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px) scale(0.98); } /* Adjusted */
-            to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 600px) { 
-            body { padding: 15px; } /* Less padding on small screens */
-            .app-name { font-size: 2rem; }
-            .app-tagline { font-size: 0.9rem; max-width: 260px;}
-            .login-portal { padding: 1.8rem 1.2rem; }
-            .form-title { font-size: 1.3rem; margin-bottom: 1.5rem; }
-            .action-button { font-size: 1rem; padding: 0.8rem 1rem;}
-            .input-field-group label { font-size: 0.85rem; }
-            .game-input { padding: 0.8rem 1rem; font-size: 0.9rem; }
-            .site-footer { font-size: 0.75rem; padding-top: 1rem;}
-            .app-logo { width: 80px; height: 80px; }
-        }
     </style>
-</head>
-<body>
 
-    <div class="login-wrapper"> 
+</head>
+
+<body class="antialiased">
+
+    <div class="login-wrapper">
+
         <div class="app-branding">
+
             <div class="app-logo">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M12 14.27L10.64 13C9.09 11.57 7.16 10.57 5 10.18V17.13C7.61 17.47 10 18.47 12 19.95C14 18.47 16.39 17.47 19 17.13V10.18C16.84 10.57 14.91 11.57 13.36 13M19 8.15C19.65 8.05 20.32 8 21 8V19C17.5 19 14.36 20.35 12 22.54C9.64 20.35 6.5 19 3 19V8C3.68 8 4.35 8.05 5 8.15C7.69 8.56 10.1 9.78 12 11.54C13.9 9.78 16.31 8.56 19 8.15M12 6C12.27 6 12.5 5.9 12.71 5.71C12.9 5.5 13 5.27 13 5S12.9 4.5 12.71 4.29C12.5 4.11 12.27 4 12 4S11.5 4.01 11.29 4.29C11.11 4.5 11 4.74 11 5S11.11 5.5 11.29 5.71C11.5 5.9 11.74 6 12 6M14.12 7.12C13.56 7.68 12.8 8 12 8S10.44 7.68 9.88 7.12C9.32 6.56 9 5.8 9 5S9.32 3.44 9.88 2.88C10.44 2.32 11.2 2 12 2S13.56 2.32 14.12 2.88 15 4.2 15 5 14.68 6.56 14.12 7.12Z"/>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 14.27L10.64 13C9.09 11.57 7.16 10.57 5 10.18V17.13C7.61 17.47 10 18.47 12 19.95C14 18.47 16.39 17.47 19 17.13V10.18C16.84 10.57 14.91 11.57 13.36 13M19 8.15C19.65 8.05 20.32 8 21 8V19C17.5 19 14.36 20.35 12 22.54C9.64 20.35 6.5 19 3 19V8C3.68 8 4.35 8.05 5 8.15C7.69 8.56 10.1 9.78 12 11.54C13.9 9.78 16.31 8.56 19 8.15M12 6C12.27 6 12.5 5.9 12.71 5.71C12.9 5.5 13 5.27 13 5S12.9 4.5 12.71 4.29C12.5 4.11 12.27 4 12 4S11.5 4.01 11.29 4.29C11.11 4.5 11 4.74 11 5S11.11 5.5 11.29 5.71C11.5 5.9 11.74 6 12 6M14.12 7.12C13.56 7.68 12.8 8 12 8S10.44 7.68 9.88 7.12C9.32 6.56 9 5.8 9 5S9.32 3.44 9.88 2.88C10.44 2.32 11.2 2 12 2S13.56 2.32 14.12 2.88 15 4.2 15 5 14.68 6.56 14.12 7.12Z"/>
                 </svg>
             </div>
+
             <h1 class="app-name">Edufysa GO</h1>
-            <p class="app-tagline">Lihat, kejar, dan menangkan belajar!</p>
+
+            <p class="app-tagline">✨ Level up versi terbaik dirimu 🚀</p>
+
         </div>
 
         <main class="login-portal">
-            <h2 class="form-title">
-                <span class="icon">✨</span> Login Area Siswa
-            </h2>
 
-            <div id="error-banner" class="error-banner">
-                <p id="error-message-text">Error placeholder</p>
-            </div>
-            
-            <form id="student-login-form" class="space-y-3"> 
+            <h2 class="form-title">Login Siswa</h2>
+            <p>🕵️ Yuk, Pantau progressmu tumbuh setiap hari!</p>
+            <br><br>
+            <form id="student-login-form">
                 <div class="input-field-group">
-                    <label for="nis">NIS Kamu (ID Pemain)</label>
-                    <input id="nis" type="text" class="game-input" placeholder="Contoh: 202412345" required>
+                    <label for="nis">🆔 User ID</label>
+                    <input id="nis" type="text" class="game-input" placeholder="Masukkan User ID kamu" required>
+ 
                 </div>
-                
+
                 <div class="input-field-group">
-                    <label for="password">Password (Kode Akses)</label>
-                    <input id="password" type="password" class="game-input" placeholder="••••••••" required>
+                    <label for="password">🔑 Password</label>
+                    <input id="password" type="password" class="game-input" placeholder="Masukkan password kamu" required>
                 </div>
-                
+<center><center>
                 <div>
                     <button type="submit" id="login-button" class="action-button">
                         <span>🚀</span>
-                        <span>Masuk Arena</span>
+                        <span>Gas Login</span>
                     </button>
                 </div>
             </form>
-            
+<br>
             <div class="links-section">
-                <a href="login.html" class="subtle-link"> <span class="icon">🧑‍🏫</span> Login sebagai Guru Instruktur?
+                <a href="login.html" class="center subtle-link">
+                    <span class="icon">🕵️</span> Login sebagai Guru
                 </a>
                 <br>
-                <button id="debug-connection-button" class="subtle-link mt-2">
-                    <span class="icon">📡</span> Tes Jaringan Server
+                <button id="debug-connection-button" class="subtle-link">
+                    <span class="icon">📡</span> Tes Koneksi Server
                 </button>
             </div>
+</center>
         </main>
 
         <footer class="site-footer">
-            <p>&copy; <span id="currentYear"></span> | Edufysa ❤️ with Mas Alfy. All rights reserved.</p>
-            <p>✨ Inspiring minds, sharing knowledge, building futures ✨</p>
+
+            <p>© <span id="currentYear"></span> | Edufysa ❤️ with Mas Alfy. All rights reserved.</p>
+
+            <p class="text-xs">✨ Inspiring minds, sharing knowledge, building futures ✨</p>
+
         </footer>
+
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-            const loginForm = document.getElementById('student-login-form');
-            const loginButton = document.getElementById('login-button');
-            const nisInput = document.getElementById('nis');
-            const passwordInput = document.getElementById('password');
-            const errorBanner = document.getElementById('error-banner');
-            const errorMessageText = document.getElementById('error-message-text');
-            const debugButton = document.getElementById('debug-connection-button');
-
-            function showError(message) {
-                errorMessageText.textContent = message;
-                errorBanner.classList.add('show');
-            }
-
-            function hideError() {
-                errorBanner.classList.remove('show');
-            }
-            
-            let originalButtonContent = loginButton.innerHTML;
-            function setButtonLoading(isLoading) {
-                if (isLoading) {
-                    loginButton.classList.add('loading');
-                    loginButton.disabled = true;
-                    loginButton.querySelector('span:last-child').textContent = 'Connecting...';
-                } else {
-                    loginButton.classList.remove('loading');
-                    loginButton.disabled = false;
-                    loginButton.innerHTML = originalButtonContent; 
-                }
-            }
-
-            loginForm.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                hideError();
-                
-                const nis = nisInput.value;
-                const password = passwordInput.value;
-
-                if (!nis || !password) {
-                    showError("NIS dan Password tidak boleh kosong, Champion!");
-                    return;
-                }
-                
-                setButtonLoading(true);
-                
-                try {
-                    const response = await new Promise(resolve => setTimeout(() => {
-                        if (nis === "12345" && password === "edufysaGO") {
-                            resolve({ success: true, siswa: { nama: "Pemain Hebat" } });
-                        } else {
-                            resolve({ success: false, error: "ID Pemain atau Kode Akses salah! Cek lagi." });
-                        }
-                    }, 1500));
-
-                    if (response.success) {
-                        loginButton.querySelector('span:first-child').textContent = '✔️';
-                        loginButton.querySelector('span:last-child').textContent = 'Berhasil!';
-                        loginButton.style.background = 'linear-gradient(60deg, #a7f3d0, #6ee7b7)'; 
-                        loginButton.style.boxShadow = '0 3px 0 #58cca0, 0 5px 10px rgba(100,200,150,0.3)';
-
-                        localStorage.setItem('kelasguru_siswa', JSON.stringify(response.siswa));
-                        
-                        setTimeout(() => {
-                            window.location.href = 'siswa-dashboard.html'; 
-                        }, 1000);
-                    } else {
-                        showError(response.error || 'Gagal terhubung ke arena. Coba lagi!');
-                        setButtonLoading(false);
-                        document.querySelector('.login-portal').animate([
-                            { transform: 'translateX(0px)' }, { transform: 'translateX(-7px)' }, 
-                            { transform: 'translateX(7px)' }, { transform: 'translateX(-5px)' },
-                            { transform: 'translateX(5px)' }, { transform: 'translateX(0px)' }
-                        ], { duration: 350, easing: 'ease-in-out' }); // Slightly faster shake
-                    }
-                } catch (error) {
-                    showError('Oops! Ada gangguan teknis di markas. Tim sedang perbaiki!');
-                    console.error('Login error:', error);
-                    setButtonLoading(false);
-                }
-            });
-            
-            debugButton.addEventListener('click', async function() {
-                hideError();
-                errorBanner.style.backgroundColor = 'hsla(200, 80%, 88%, 0.7)'; // Pastel blue info
-                errorBanner.style.borderColor = 'hsla(200, 70%, 78%, 0.8)';
-                showError('PING Server Edufysa GO...');
-                debugButton.disabled = true;
-                debugButton.style.opacity = '0.6'; // Dim when disabled
-
-                await new Promise(resolve => setTimeout(resolve, 1200));
-                
-                errorBanner.style.backgroundColor = 'hsla(145, 63%, 90%, 0.7)'; // Pastel green success
-                errorBanner.style.borderColor = 'hsla(145, 50%, 80%, 0.8)';
-                showError('PONG! Koneksi ke Server Stabil. Akun Tes: NIS (12345), Pass (edufysaGO)');
-                nisInput.value = "12345";
-                passwordInput.value = "edufysaGO";
-                debugButton.disabled = false;
-                debugButton.style.opacity = '0.85'; // Restore opacity
-            });
-
-            const siswaData = localStorage.getItem('kelasguru_siswa');
-            if (siswaData) {
-                try {
-                    JSON.parse(siswaData); 
-                     window.location.href = 'siswa-dashboard.html'; 
-                } catch (e) {
-                    localStorage.removeItem('kelasguru_siswa'); 
-                }
-            }
         });
     </script>
+
 </body>
+
 </html>
